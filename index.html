@@ -32,8 +32,9 @@
           <ul class="navigation-list list">
             <li class="navigation-list-item">
               <a class="navigation-list-item-link link" href="./index.html"
-                >Студия</a
+                >Студия <div class="current-page"></div></a
               >
+              
             </li>
             <li class="navigation-list-item">
               <a class="navigation-list-item-link link" href="./portfolio.html"
@@ -78,7 +79,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="hero-btn" type="button">Заказать услугу</button>
+          <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -137,24 +138,28 @@
               </div>
             </li>
             <li class="about-list-item">
-              <img
-                class="about-img"
-                src="./images/about-us/about-us-img2.jpg"
-                alt="Телефон"
-                width="370"
-                height="294"
-              />
-              <p class="about-content">Мобильные приложения</p>
+              <div class="about-thumb">
+                <img
+                  class="about-img"
+                  src="./images/about-us/about-us-img2.jpg"
+                  alt="Телефон"
+                  width="370"
+                  height="294"
+                />
+              <p class="about-text">Мобильные приложения</p>
+              </div>
             </li>
             <li class="about-list-item">
-              <img
-                class="about-img"
-                src="./images/about-us/about-us-img3.jpg"
-                alt="Планшет"
-                width="370"
-                height="294"
-              />
-              <p class="about-content">Дизайнерские решения</p>
+              <div class="about-thumb">
+                <img
+                  class="about-img"
+                  src="./images/about-us/about-us-img3.jpg"
+                  alt="Планшет"
+                  width="370"
+                  height="294"
+                />
+              <p class="about-text">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -466,5 +471,13 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          X</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
